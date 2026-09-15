@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="MaquiControl helps machinery rental businesses manage equipment availability, maintenance and rental operations.">
+          content="MaquiControl helps machinery rental businesses manage fleets, reservations, availability and maintenance from one platform.">
 
     <meta name="keywords"
-          content="machinery, equipment rental, construction, maintenance, MaquiControl">
+          content="machinery rental, fleet management, heavy machinery, equipment rental, maintenance, MaquiControl">
 
-    <meta name="author"
-          content="AndesHeavyTech">
+    <meta name="author" content="AndesHeavyTech">
 
     <title>MaquiControl | Machinery Rental Management</title>
 
@@ -23,50 +20,42 @@
 
 <body>
 
-<header class="site-header">
+<header class="header">
+    <div class="container navbar">
 
-    <nav class="navbar" aria-label="Main navigation">
-
-        <a href="#hero" class="brand">
-            MaquiControl
+        <a href="#home" class="logo" aria-label="MaquiControl home">
+            <span class="logo-mark">M</span>
+            <span>MaquiControl</span>
         </a>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#hero">Home</a>
-            </li>
-
-            <li>
-                <a href="#benefits">Benefits</a>
-            </li>
-
-            <li>
-                <a href="#how-it-works">How it works</a>
-            </li>
-
-            <li>
-                <a href="#about">About us</a>
-            </li>
-        </ul>
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home" data-i18n="navHome">Home</a>
+            <a href="#benefits" data-i18n="navBenefits">Benefits</a>
+            <a href="#how-it-works" data-i18n="navHow">How it works</a>
+            <a href="#pricing" data-i18n="navPricing">Plans</a>
+            <a href="#about" data-i18n="navAbout">About us</a>
+        </nav>
 
         <div class="nav-actions">
 
             <button
+                    id="languageButton"
                     class="language-button"
                     type="button"
-                    aria-label="Change language">
+                    aria-label="Change language to Spanish">
                 EN | ES
             </button>
 
-            <a href="#"
-               class="button button-primary">
+            <a
+                    href="#"
+                    class="button button-small button-outline"
+                    data-i18n="openPlatform">
                 Open platform
             </a>
 
         </div>
 
-    </nav>
-
+    </div>
 </header>
 
 
@@ -74,226 +63,195 @@
 
     <!-- HERO -->
 
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
 
-        <div class="hero-content">
+        <div class="container hero-grid">
 
-            <h1>
-                Rent and manage machinery
-                with greater control.
-            </h1>
+            <div class="hero-content">
 
-            <p>
-                Clear availability, organized rentals and maintenance
-                tracking to reduce friction in every operation.
-            </p>
+                <div class="status-chip">
+                    <span class="status-dot"></span>
+                    <span data-i18n="heroChip">
+                        Smarter machinery management
+                    </span>
+                </div>
 
-            <div class="hero-actions">
+                <h1 data-i18n="heroTitle">
+                    Manage your machinery without losing control.
+                </h1>
 
-                <a href="#"
-                   class="button button-primary">
-                    Manage my fleet
-                </a>
+                <p class="hero-description" data-i18n="heroDescription">
+                    Centralize availability, reservations and maintenance so your
+                    machinery rental business can operate faster and with fewer mistakes.
+                </p>
 
-                <a href="#"
-                   class="button button-secondary">
-                    Find machinery
-                </a>
+                <div class="hero-actions">
 
-            </div>
+                    <a
+                            href="#pricing"
+                            class="button button-primary"
+                            data-i18n="heroPrimary">
+                        Manage my fleet
+                    </a>
 
-            <p class="hero-caption">
-                For owners, administrators, contractors and site managers.
-            </p>
-
-        </div>
-
-
-        <div class="hero-visual"
-             aria-label="Heavy machinery illustration">
-
-            <div class="machine-illustration"
-                 aria-hidden="true">
-
-                <div class="machine-boom"></div>
-
-                <div class="machine-arm"></div>
-
-                <div class="machine-bucket"></div>
-
-                <div class="machine-body">
-
-                    <div class="machine-cabin">
-
-                        <div class="machine-window"></div>
-
-                    </div>
+                    <a
+                            href="#segments"
+                            class="button button-secondary"
+                            data-i18n="heroSecondary">
+                        Find machinery
+                    </a>
 
                 </div>
 
-                <div class="machine-wheel machine-wheel-left"></div>
-
-                <div class="machine-wheel machine-wheel-right"></div>
+                <p class="hero-note" data-i18n="heroNote">
+                    Built for small machinery rental businesses and independent contractors.
+                </p>
 
             </div>
 
-            <div class="status-chip">
-                ● Equipment available
+
+            <div class="hero-visual">
+
+                <div
+                        class="machine-illustration"
+                        role="img"
+                        aria-label="Illustration of heavy machinery">
+
+                    <div class="machine-boom"></div>
+                    <div class="machine-arm"></div>
+                    <div class="machine-bucket"></div>
+
+                    <div class="machine-body">
+
+                        <div class="machine-cabin">
+                            <div class="machine-window"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="machine-wheel machine-wheel-left"></div>
+                    <div class="machine-wheel machine-wheel-right"></div>
+
+                </div>
+
             </div>
 
         </div>
 
-    </section>
 
+        <div class="container stats-grid">
 
-    <!-- STATS -->
+            <article class="stat-card">
+                <strong>1</strong>
+                <span data-i18n="statOne">centralized platform</span>
+            </article>
 
-    <section class="stats-section"
-             aria-label="Platform highlights">
+            <article class="stat-card">
+                <strong>2</strong>
+                <span data-i18n="statTwo">user experiences</span>
+            </article>
 
-        <article>
+            <article class="stat-card">
+                <strong>24/7</strong>
+                <span data-i18n="statThree">information access</span>
+            </article>
 
-            <strong>
-                1 place
-            </strong>
+            <article class="stat-card">
+                <strong>↓</strong>
+                <span data-i18n="statFour">less operational friction</span>
+            </article>
 
-            <span>
-                to centralize operations
-            </span>
-
-        </article>
-
-
-        <article>
-
-            <strong>
-                2 user paths
-            </strong>
-
-            <span>
-                tailored to each segment
-            </span>
-
-        </article>
-
-
-        <article>
-
-            <strong>
-                24/7
-            </strong>
-
-            <span>
-                availability visibility
-            </span>
-
-        </article>
-
-
-        <article>
-
-            <strong>
-                Less friction
-            </strong>
-
-            <span>
-                in coordination and rentals
-            </span>
-
-        </article>
+        </div>
 
     </section>
 
 
     <!-- BENEFITS -->
 
-    <section id="benefits"
-             class="section benefits">
+    <section id="benefits" class="section">
 
-        <div class="section-heading">
+        <div class="container">
 
-            <h2>
-                Everything you need to reduce manual coordination
-            </h2>
+            <div class="section-heading">
 
-            <p>
-                A simple experience that keeps critical information
-                available when operations demand it.
-            </p>
-
-        </div>
-
-
-        <div class="card-grid">
-
-            <article class="benefit-card">
-
-                <span class="card-number">
-                    01
+                <span class="eyebrow" data-i18n="benefitsEyebrow">
+                    Benefits
                 </span>
 
-                <h3>
-                    Real availability
-                </h3>
+                <h2 data-i18n="benefitsTitle">
+                    Everything you need to keep your operation organized.
+                </h2>
 
-                <p>
-                    Check equipment status before confirming a rental.
+                <p data-i18n="benefitsDescription">
+                    Replace scattered spreadsheets, calls and messages with a single
+                    source of information.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="benefit-card">
+            <div class="cards-grid">
 
-                <span class="card-number">
-                    02
-                </span>
+                <article class="feature-card">
 
-                <h3>
-                    Organized rentals
-                </h3>
+                    <div class="icon-box">01</div>
 
-                <p>
-                    Avoid date conflicts and keep every rental organized.
-                </p>
+                    <h3 data-i18n="benefitOneTitle">
+                        Real-time availability
+                    </h3>
 
-            </article>
+                    <p data-i18n="benefitOneDescription">
+                        Quickly identify which machines are available, reserved or under maintenance.
+                    </p>
 
-
-            <article class="benefit-card">
-
-                <span class="card-number">
-                    03
-                </span>
-
-                <h3>
-                    Visible maintenance
-                </h3>
-
-                <p>
-                    Identify equipment under maintenance and track
-                    incidents clearly.
-                </p>
-
-            </article>
+                </article>
 
 
-            <article class="benefit-card">
+                <article class="feature-card">
 
-                <span class="card-number">
-                    04
-                </span>
+                    <div class="icon-box">02</div>
 
-                <h3>
-                    Usage-hour control
-                </h3>
+                    <h3 data-i18n="benefitTwoTitle">
+                        Reservation control
+                    </h3>
 
-                <p>
-                    Centralize usage data to simplify tracking
-                    and reconciliation.
-                </p>
+                    <p data-i18n="benefitTwoDescription">
+                        Keep rental dates organized and reduce conflicts between reservations.
+                    </p>
 
-            </article>
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="icon-box">03</div>
+
+                    <h3 data-i18n="benefitThreeTitle">
+                        Maintenance tracking
+                    </h3>
+
+                    <p data-i18n="benefitThreeDescription">
+                        Know the operational condition of your equipment before confirming a rental.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="icon-box">04</div>
+
+                    <h3 data-i18n="benefitFourTitle">
+                        Centralized information
+                    </h3>
+
+                    <p data-i18n="benefitFourDescription">
+                        Access important machinery and rental information from one place.
+                    </p>
+
+                </article>
+
+            </div>
 
         </div>
 
@@ -302,92 +260,85 @@
 
     <!-- SEGMENTS -->
 
-    <section id="segments"
-             class="section segments">
+    <section id="segments" class="section section-dark">
 
-        <div class="section-heading">
+        <div class="container">
 
-            <h2>
-                One platform, two different needs
-            </h2>
+            <div class="section-heading">
 
-            <p>
-                Each segment gets a direct path to what it needs.
-            </p>
+                <span class="eyebrow" data-i18n="segmentsEyebrow">
+                    Built for your workflow
+                </span>
 
-        </div>
+                <h2 data-i18n="segmentsTitle">
+                    Two sides of the machinery rental process.
+                </h2>
 
-
-        <div class="segment-grid">
-
-            <article class="segment-card">
-
-                <h3>
-                    Owners and administrators
-                </h3>
-
-                <p>
-                    Manage fleet availability, rentals,
-                    maintenance and operating costs.
-                </p>
-
-                <ul>
-
-                    <li>
-                        ✓ Equipment availability
-                    </li>
-
-                    <li>
-                        ✓ Maintenance tracking
-                    </li>
-
-                    <li>
-                        ✓ Rental control
-                    </li>
-
-                </ul>
-
-                <a href="#"
-                   class="button button-primary">
-                    Manage my fleet
-                </a>
-
-            </article>
+            </div>
 
 
-            <article class="segment-card">
+            <div class="segment-grid">
 
-                <h3>
-                    Contractors and site managers
-                </h3>
+                <article class="segment-card">
 
-                <p>
-                    Find available equipment and coordinate
-                    rentals with clear information.
-                </p>
+                    <span class="segment-number">01</span>
 
-                <ul>
+                    <h3 data-i18n="segmentOneTitle">
+                        Machinery owners and administrators
+                    </h3>
 
-                    <li>
-                        ✓ Compare options
-                    </li>
+                    <p data-i18n="segmentOneDescription">
+                        Organize your machinery fleet, reservations and maintenance
+                        without relying on disconnected spreadsheets and conversations.
+                    </p>
 
-                    <li>
-                        ✓ Available dates
-                    </li>
+                    <ul>
+                        <li data-i18n="segmentOneItemOne">Monitor machinery availability</li>
+                        <li data-i18n="segmentOneItemTwo">Control rental reservations</li>
+                        <li data-i18n="segmentOneItemThree">Track maintenance status</li>
+                        <li data-i18n="segmentOneItemFour">Centralize customer and equipment information</li>
+                    </ul>
 
-                    <li>
-                        ✓ Rental confirmation
-                    </li>
+                    <a
+                            href="#pricing"
+                            class="button button-primary"
+                            data-i18n="segmentOneButton">
+                        Manage my fleet
+                    </a>
 
-                </ul>
+                </article>
 
-                <a href="#"
-                   class="button button-secondary">
-                    Find machinery
-                </a>
 
-            </article>
+                <article class="segment-card">
+
+                    <span class="segment-number">02</span>
+
+                    <h3 data-i18n="segmentTwoTitle">
+                        Contractors and site managers
+                    </h3>
+
+                    <p data-i18n="segmentTwoDescription">
+                        Find the machinery you need and review relevant information
+                        before coordinating your next rental.
+                    </p>
+
+                    <ul>
+                        <li data-i18n="segmentTwoItemOne">Explore available machinery</li>
+                        <li data-i18n="segmentTwoItemTwo">Review equipment information</li>
+                        <li data-i18n="segmentTwoItemThree">Check rental availability</li>
+                        <li data-i18n="segmentTwoItemFour">Reduce coordination time</li>
+                    </ul>
+
+                    <a
+                            href="#how-it-works"
+                            class="button button-secondary"
+                            data-i18n="segmentTwoButton">
+                        Find machinery
+                    </a>
+
+                </article>
+
+            </div>
 
         </div>
 
@@ -396,74 +347,74 @@
 
     <!-- HOW IT WORKS -->
 
-    <section id="how-it-works"
-             class="section">
+    <section id="how-it-works" class="section">
 
-        <div class="section-heading">
+        <div class="container">
 
-            <h2>
-                How it works
-            </h2>
+            <div class="section-heading">
 
-            <p>
-                Three steps to move from scattered coordination
-                to a clearer process.
-            </p>
-
-        </div>
-
-
-        <div class="steps-grid">
-
-            <article class="step-card">
-
-                <span>
-                    1
+                <span class="eyebrow" data-i18n="howEyebrow">
+                    How it works
                 </span>
 
-                <h3>
-                    Check
-                </h3>
+                <h2 data-i18n="howTitle">
+                    Less coordination. More control.
+                </h2>
 
-                <p>
-                    Review equipment, status and availability.
+                <p data-i18n="howDescription">
+                    MaquiControl simplifies the most important steps of machinery rental management.
                 </p>
 
-            </article>
+            </div>
 
 
-            <article class="step-card">
+            <div class="steps-grid">
 
-                <span>
-                    2
-                </span>
+                <article class="step-card">
 
-                <h3>
-                    Coordinate
-                </h3>
+                    <span class="step-number">01</span>
 
-                <p>
-                    Set dates, conditions and rental details.
-                </p>
+                    <h3 data-i18n="stepOneTitle">
+                        Register your machinery
+                    </h3>
 
-            </article>
+                    <p data-i18n="stepOneDescription">
+                        Add your equipment and keep its main information organized.
+                    </p>
+
+                </article>
 
 
-            <article class="step-card">
+                <article class="step-card">
 
-                <span>
-                    3
-                </span>
+                    <span class="step-number">02</span>
 
-                <h3>
-                    Track
-                </h3>
+                    <h3 data-i18n="stepTwoTitle">
+                        Manage availability
+                    </h3>
 
-                <p>
-                    Track usage, incidents and service completion.
-                </p>
+                    <p data-i18n="stepTwoDescription">
+                        Keep track of reservations, operational status and maintenance.
+                    </p>
 
-            </article>
+                </article>
+
+
+                <article class="step-card">
+
+                    <span class="step-number">03</span>
+
+                    <h3 data-i18n="stepThreeTitle">
+                        Coordinate rentals
+                    </h3>
+
+                    <p data-i18n="stepThreeDescription">
+                        Respond faster and make better decisions with centralized information.
+                    </p>
+
+                </article>
+
+            </div>
 
         </div>
 
@@ -472,19 +423,225 @@
 
     <!-- VALUE -->
 
-    <section id="about"
-             class="section value-section">
+    <section class="section">
 
-        <h2>
-            Fewer scattered messages.
-            More traceability.
-        </h2>
+        <div class="container value-box">
 
-        <p>
-            Centralize critical operational information
-            and reduce uncertainty before, during
-            and after every rental.
-        </p>
+            <div>
+
+                <span class="eyebrow" data-i18n="valueEyebrow">
+                    One platform
+                </span>
+
+                <h2 data-i18n="valueTitle">
+                    Your machinery information where you actually need it.
+                </h2>
+
+            </div>
+
+            <p data-i18n="valueDescription">
+                MaquiControl helps small rental businesses reduce manual coordination
+                and gives contractors a clearer way to access machinery information.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRICING -->
+
+    <section id="pricing" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="eyebrow" data-i18n="pricingEyebrow">
+                    Subscription plans
+                </span>
+
+                <h2 data-i18n="pricingTitle">
+                    Choose the plan that fits your business.
+                </h2>
+
+                <p data-i18n="pricingDescription">
+                    Flexible monthly or annual subscriptions based on your fleet size.
+                </p>
+
+            </div>
+
+
+            <div class="pricing-grid">
+
+                <article class="pricing-card">
+
+                    <div class="pricing-header">
+
+                        <span class="plan-label" data-i18n="essentialLabel">
+                            Essential
+                        </span>
+
+                        <h3 data-i18n="essentialTitle">
+                            Essential Plan
+                        </h3>
+
+                        <p data-i18n="essentialDescription">
+                            For small machinery rental businesses starting to digitize their operation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="price-container">
+
+                        <div class="main-price">
+                            <span class="currency">S/</span>
+                            <span class="price">49</span>
+                            <span class="period" data-i18n="monthPeriod">/ month</span>
+                        </div>
+
+                        <p class="annual-price" data-i18n="essentialAnnual">
+                            or S/ 490 / year
+                        </p>
+
+                    </div>
+
+
+                    <div class="plan-capacity">
+
+                        <strong data-i18n="essentialCapacity">
+                            Up to 5 machines
+                        </strong>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li data-i18n="essentialFeatureOne">
+                            Machinery fleet management
+                        </li>
+
+                        <li data-i18n="essentialFeatureTwo">
+                            Availability tracking
+                        </li>
+
+                        <li data-i18n="essentialFeatureThree">
+                            Rental reservation management
+                        </li>
+
+                        <li data-i18n="essentialFeatureFour">
+                            Maintenance tracking
+                        </li>
+
+                        <li data-i18n="essentialFeatureFive">
+                            Centralized equipment information
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                            href="#"
+                            class="button button-secondary pricing-button"
+                            data-i18n="essentialButton">
+                        Get started
+                    </a>
+
+                </article>
+
+
+                <article class="pricing-card pricing-card-featured">
+
+                    <span class="recommended-badge" data-i18n="recommended">
+                        Recommended
+                    </span>
+
+                    <div class="pricing-header">
+
+                        <span class="plan-label" data-i18n="proLabel">
+                            Pro
+                        </span>
+
+                        <h3 data-i18n="proTitle">
+                            Pro Plan
+                        </h3>
+
+                        <p data-i18n="proDescription">
+                            For growing rental businesses that manage a larger machinery fleet.
+                        </p>
+
+                    </div>
+
+
+                    <div class="price-container">
+
+                        <div class="main-price">
+                            <span class="currency">S/</span>
+                            <span class="price">99</span>
+                            <span class="period" data-i18n="monthPeriod">/ month</span>
+                        </div>
+
+                        <p class="annual-price" data-i18n="proAnnual">
+                            or S/ 990 / year
+                        </p>
+
+                    </div>
+
+
+                    <div class="plan-capacity">
+
+                        <strong data-i18n="proCapacity">
+                            Up to 20 machines
+                        </strong>
+
+                    </div>
+
+
+                    <ul class="pricing-features">
+
+                        <li data-i18n="proFeatureOne">
+                            Everything included in Essential
+                        </li>
+
+                        <li data-i18n="proFeatureTwo">
+                            Expanded fleet management
+                        </li>
+
+                        <li data-i18n="proFeatureThree">
+                            Advanced operational insights
+                        </li>
+
+                        <li data-i18n="proFeatureFour">
+                            Enhanced rental management
+                        </li>
+
+                        <li data-i18n="proFeatureFive">
+                            Tools for growing operations
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                            href="#"
+                            class="button button-primary pricing-button"
+                            data-i18n="proButton">
+                        Choose Pro
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <p class="pricing-note" data-i18n="pricingNote">
+                Annual plans include a reduced effective monthly cost.
+                Rental transactions may also include a service commission.
+            </p>
+
+        </div>
 
     </section>
 
@@ -493,25 +650,29 @@
 
     <section class="section final-cta">
 
-        <h2>
-            Start with the profile that best matches your needs
-        </h2>
+        <div class="container final-cta-box">
 
-        <p>
-            Each segment CTA connects to its corresponding
-            Web Application view.
-        </p>
+            <div>
 
-        <div>
+                <span class="eyebrow" data-i18n="ctaEyebrow">
+                    Ready to improve your operation?
+                </span>
 
-            <a href="#"
-               class="button button-primary">
-                Manage my fleet
-            </a>
+                <h2 data-i18n="ctaTitle">
+                    Take control of your machinery business.
+                </h2>
 
-            <a href="#"
-               class="button button-secondary">
-                Find machinery
+                <p data-i18n="ctaDescription">
+                    Start organizing your fleet, reservations and maintenance with MaquiControl.
+                </p>
+
+            </div>
+
+            <a
+                    href="#pricing"
+                    class="button button-primary"
+                    data-i18n="ctaButton">
+                View plans
             </a>
 
         </div>
@@ -521,41 +682,58 @@
 </main>
 
 
-<footer class="site-footer">
+<footer id="about" class="footer">
 
-    <div>
+    <div class="container footer-grid">
 
-        <strong>
-            MaquiControl
-        </strong>
+        <div>
 
-        <p>
-            Heavy machinery management and rental.
-        </p>
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-mark">M</span>
+                <span>MaquiControl</span>
+            </a>
+
+            <p data-i18n="footerDescription">
+                A digital solution by AndesHeavyTech for smarter machinery rental management.
+            </p>
+
+        </div>
+
+
+        <nav class="footer-links" aria-label="Footer navigation">
+
+            <a href="#benefits" data-i18n="navBenefits">
+                Benefits
+            </a>
+
+            <a href="#how-it-works" data-i18n="navHow">
+                How it works
+            </a>
+
+            <a href="#pricing" data-i18n="navPricing">
+                Plans
+            </a>
+
+            <a href="#" data-i18n="footerContact">
+                Contact
+            </a>
+
+        </nav>
 
     </div>
 
 
-    <nav aria-label="Footer navigation">
+    <div class="container footer-bottom">
 
-        <a href="#benefits">
-            Product
-        </a>
+        <span>
+            © 2026 MaquiControl — AndesHeavyTech
+        </span>
 
-        <a href="#about">
-            Company
-        </a>
+        <span data-i18n="footerRights">
+            All rights reserved.
+        </span>
 
-        <a href="#">
-            Contact
-        </a>
-
-    </nav>
-
-
-    <p>
-        &copy; 2026 AndesHeavyTech.
-    </p>
+    </div>
 
 </footer>
 
@@ -563,5 +741,4 @@
 <script src="js/main.js"></script>
 
 </body>
-
 </html>
